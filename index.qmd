@@ -1,0 +1,86 @@
+---
+title: "An Introduction to Causal Inference"
+subtitle: "Understanding and Identifying Description, Prediction,& Explanation"
+author: "Paul Johnson"
+---
+
+# What is Causal Inference? {data-background-color="#425563" data-verticator="#E8EDEE"}
+
+A Fancy Name for an Old Way of Thinking
+
+## Defining Our Terms {.center}
+
+- Causal inference is the process of estimating the mechanisms by which changes in variables (causes) lead to changes in an outcome (the effect).
+- This approach to analysis seeks to establish a cause-and-effect that is generalisable and substantively meaningful in the real world. 
+- 
+
+## Moving Beyond "Associations" {.center}
+
+- We are often interested in questions of "cause", but we use methods (and language) more fit for description.
+- It is very common to see the term "association" used, to avoid claiming the outcome has been "caused" by our predictors (I am guilty of this).
+  - But association still implies some causal effect [@haber2022].
+  - And the recommendations and implications of the research clearly indicate a belief that the findings are causal!
+- 
+
+## More Than a Name {.center}
+
+- While "causal inference" has become the popular terminology, these ideas are not entirely new.
+- However, the approach (DAGs, explicit processes for drawing causal conclusions) has made more precise the old methods.
+- During my PhD, I was taught a lot of similar concepts, but in a more haphazard way.
+  - Learning causal inference methods/concepts and formalising the informal process I use has helped me become a better scientist!
+
+# Description, Prediction, & Causal Inference {data-background-color="#425563" data-verticator="#E8EDEE"}
+
+Understanding the Type of Questions We're Asking
+
+## Description {.center}
+
+- What has happened?
+
+## Prediction {.center}
+
+- What will happen in the future?
+  
+## Causal Inference {.center}
+
+- Why has this happened? What caused it? What are the consequences?
+
+# Different Methods for Different Questions {data-background-color="#425563" data-verticator="#E8EDEE"}
+
+Knowing the Type of Question Changes the Approach to Answering
+
+## Description {.center}
+
+-  
+
+## The Differences Between Predictive & Causal Models {.center}
+
+- Predictive models can (and should) include plenty of correlations
+- With causal models, fewer variables and focus should be on causal mechanism
+
+## Conclusion {.center}
+
+- Multilevel data is very common, and we should start by assuming our data has grouping structures in it.
+- Not accounting for those grouping structures can cause a lot of problems.
+- Multilevel regression is flexible, powerful, and incredibly effective!
+
+# Thank You!
+
+Contact:
+<br>
+
+<ul >
+{{< fa solid envelope >}} [paul.johnson50@nhs.net](mailto: paul.johnson50@nhs.net)
+</ul>
+
+
+Code & Slides:
+<br>
+
+<ul >
+{{< fa brands github >}}[/NHS-South-Central-and-West/handling-missing-values](https://github.com/nhs-south-central-and-west/handling-missing-values)
+</ul>
+
+## References
+
+
