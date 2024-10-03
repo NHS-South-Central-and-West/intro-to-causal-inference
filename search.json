@@ -1,0 +1,114 @@
+[
+  {
+    "objectID": "index.html#the-study-of-cause-effect",
+    "href": "index.html#the-study-of-cause-effect",
+    "title": "An Introduction to Causal Inference",
+    "section": "The Study of Cause & Effect",
+    "text": "The Study of Cause & Effect\n\nCausal inference is the process of estimating the mechanisms by which changes in variables (causes) lead to changes in an outcome (the effect).\nIt seeks to establish a cause-and-effect that is generalisable and substantively meaningful in the real world.\nIt’s more than just Randomised Controlled Trials!"
+  },
+  {
+    "objectID": "index.html#correlation-causation",
+    "href": "index.html#correlation-causation",
+    "title": "An Introduction to Causal Inference",
+    "section": "Correlation != Causation",
+    "text": "Correlation != Causation\n\n\\[E[Y|T=1] - E[Y|T=0] = \\underbrace{E[Y_1 - Y_0|T=1]}_{ATT} + \\underbrace{\\{ E[Y_0|T=1] - E[Y_0|T=0] \\}}_{BIAS}\\]\n— Facure Alves (2022)"
+  },
+  {
+    "objectID": "index.html#moving-beyond-associations",
+    "href": "index.html#moving-beyond-associations",
+    "title": "An Introduction to Causal Inference",
+    "section": "Moving Beyond “Associations”",
+    "text": "Moving Beyond “Associations”\n\nWe are often interested in questions of “cause”, but we use methods (and language) more fit for description.\nIt is very common to see the term “association” used, to avoid claiming the outcome has been “caused” by our predictors (I am guilty of this).\n\nBut association still implies some causal effect (Haber et al. 2022).\nAnd the recommendations and implications of the research clearly indicate a belief that the findings are causal!"
+  },
+  {
+    "objectID": "index.html#schrödingers-causal-inference",
+    "href": "index.html#schrödingers-causal-inference",
+    "title": "An Introduction to Causal Inference",
+    "section": "Schrödinger’s Causal Inference",
+    "text": "Schrödinger’s Causal Inference\n\n\nOur results suggest that “Schrödinger’s causal inference,” — where studies avoid stating (or even explicitly deny) an interest in estimating causal effects yet are otherwise embedded with causal intent, inference, implications, and recommendations — is common.\n— Haber et al. (2022)"
+  },
+  {
+    "objectID": "index.html#more-than-a-name",
+    "href": "index.html#more-than-a-name",
+    "title": "An Introduction to Causal Inference",
+    "section": "More Than a Name",
+    "text": "More Than a Name\n\nWhile “causal inference” has become the popular terminology, these ideas are not entirely new.\nHowever, the approach (DAGs, explicit processes for drawing causal conclusions) has made the old methods more precise.\nMuch of causal inference focuses on methods for making causal claims possible when dealing with observational data."
+  },
+  {
+    "objectID": "index.html#visualising-causal-models-using-dags",
+    "href": "index.html#visualising-causal-models-using-dags",
+    "title": "An Introduction to Causal Inference",
+    "section": "Visualising Causal Models Using DAGs",
+    "text": "Visualising Causal Models Using DAGs\n\n\n\n\nGittens, Yener, and Yung (2022)"
+  },
+  {
+    "objectID": "index.html#the-challenge",
+    "href": "index.html#the-challenge",
+    "title": "An Introduction to Causal Inference",
+    "section": "The Challenge",
+    "text": "The Challenge\n\nIt is sometimes difficult to tell whether you are dealing with description, prediction, or explanation.\nThis is because methods like regression are appropriate for all three and the way we talk about each often blurs the lines [barrett2024]."
+  },
+  {
+    "objectID": "index.html#description---what-happened",
+    "href": "index.html#description---what-happened",
+    "title": "An Introduction to Causal Inference",
+    "section": "Description - What Happened?",
+    "text": "Description - What Happened?\n\n“Description is using data to provide a quantitative summary of certain features of the world.” (Hernán, Hsu, and Healy 2019)\nDescription is concerned with understanding what happened.\nCounting events, estimating central tendencies (mean, median, mode) and variance, and visualising distributions.\nOften used in combination with prediction and causal inference."
+  },
+  {
+    "objectID": "index.html#counting-things-is-good-actually",
+    "href": "index.html#counting-things-is-good-actually",
+    "title": "An Introduction to Causal Inference",
+    "section": "Counting Things is Good, Actually",
+    "text": "Counting Things is Good, Actually\n\nDescription is frequently treated as a lesser task, but I think this is fundamentally wrong.\nCounting is one of the best things we can do with data (Barrett, McGowan, and Gerke 2024)!\nIt can be very valuable when the quantity is extremely important.\nIt can also be sufficient if we already know a lot about it from previous causal work."
+  },
+  {
+    "objectID": "index.html#dont-mistake-description-for-explanation",
+    "href": "index.html#dont-mistake-description-for-explanation",
+    "title": "An Introduction to Causal Inference",
+    "section": "Don’t Mistake Description for Explanation!",
+    "text": "Don’t Mistake Description for Explanation!\n\nIt is very easy to fall into the trap of treating description as causal, or using causal terms when discussing descriptive findings."
+  },
+  {
+    "objectID": "index.html#prediction---what-will-happen",
+    "href": "index.html#prediction---what-will-happen",
+    "title": "An Introduction to Causal Inference",
+    "section": "Prediction - What Will Happen?",
+    "text": "Prediction - What Will Happen?\n\n“Prediction is using data to map some features of the world (the inputs) to other features of the world (the outputs).” (Hernán, Hsu, and Healy 2019)\nPrediction focuses on identifying what will happen in the future.\n\nHow many A&E attendances will occur in the next hour, day, week, or month?\nWhat is the probability of an individual suffering a health episode?\n\nMachine learning is very good at answering these kinds of questions."
+  },
+  {
+    "objectID": "index.html#causal-inference---what-was-the-cause",
+    "href": "index.html#causal-inference---what-was-the-cause",
+    "title": "An Introduction to Causal Inference",
+    "section": "Causal Inference - What Was the Cause?",
+    "text": "Causal Inference - What Was the Cause?\n\nCausal inference tries to identify and quantify cause and effect.\n\nWhat are the primary causal factors that define how long someone will wait in A&E?\nWhat are the environmental factors that lead to someone developing cancer?\nDo virtual wards reduce the quantity of hospital attendances an individual experiences?"
+  },
+  {
+    "objectID": "index.html#the-differences-between-predictive-causal-models",
+    "href": "index.html#the-differences-between-predictive-causal-models",
+    "title": "An Introduction to Causal Inference",
+    "section": "The Differences Between Predictive & Causal Models",
+    "text": "The Differences Between Predictive & Causal Models\n\nCausal models are interested in unbiased estimates, prediction focuses on reducing error.\nPredictive models can (and should) include plenty of correlations\nWith causal models, fewer variables and focus should be on causal mechanism\nA causal model can identify a small but meaningful effect that would not predict the outcome on its own and this would still be useful!"
+  },
+  {
+    "objectID": "index.html#conclusion",
+    "href": "index.html#conclusion",
+    "title": "An Introduction to Causal Inference",
+    "section": "Conclusion",
+    "text": "Conclusion\n\nUnderstanding the type of question you’re asking will define the methods you will use to find the answer.\nNo approach is inherently more valuable, but they serve specific purposes!\nTreating description as demonstrating causality is problematic.\nTreating prediction and explanation as equivalent will lead to building models that are not fit for the task."
+  },
+  {
+    "objectID": "index.html#further-resources",
+    "href": "index.html#further-resources",
+    "title": "An Introduction to Causal Inference",
+    "section": "Further Resources",
+    "text": "Further Resources\n\nCausal Inference in R\nCausal Inference for the Brave and True\nCausal Inference: The Mixtape\nCausal Inference: What If\nThe Effect: An Introduction to Research Design and Causality\nThe Book of Why: The New Science of Cause and Effect"
+  },
+  {
+    "objectID": "index.html#references",
+    "href": "index.html#references",
+    "title": "An Introduction to Causal Inference",
+    "section": "References",
+    "text": "References\n\n\n\nPaul Johnson // Introduction to Causal Inference // Oct 3, 2024\n\n\n\n\nBarrett, Malcolm, Lucy D’Agostino McGowan, and Travis Gerke. 2024. Causal Inference in r. https://www.r-causal.org/.\n\n\nFacure Alves, Matheus. 2022. Causal Inference for the Brave and True. https://matheusfacure.github.io/python-causality-handbook/landing-page.html.\n\n\nGittens, Alex, Bülent Yener, and Moti Yung. 2022. “An Adversarial Perspective on Accuracy, Robustness, Fairness, and Privacy: Multilateral-Tradeoffs in Trustworthy ML.” IEEE Access 10: 120850–65.\n\n\nHaber, Noah A, Sarah E Wieten, Julia M Rohrer, Onyebuchi A Arah, Peter WG Tennant, Elizabeth A Stuart, Eleanor J Murray, et al. 2022. “Causal and Associational Language in Observational Health Research: A Systematic Evaluation.” American Journal of Epidemiology 191 (12): 2084–97. https://academic.oup.com/aje/article/191/12/2084/6655746.\n\n\nHernán, Miguel A, John Hsu, and Brian Healy. 2019. “A Second Chance to Get Causal Inference Right: A Classification of Data Science Tasks.” Chance 32 (1): 42–49."
+  }
+]
