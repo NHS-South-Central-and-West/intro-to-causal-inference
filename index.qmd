@@ -1,6 +1,6 @@
 ---
 title: "An Introduction to Causal Inference"
-subtitle: "Understanding and Identifying Description, Prediction,& Explanation"
+subtitle: "Understanding the Role of Description, Prediction, and (Causal) Explanation"
 author: "Paul Johnson"
 ---
 
@@ -8,11 +8,19 @@ author: "Paul Johnson"
 
 A Fancy Name for an Old Way of Thinking
 
-## Defining Our Terms {.center}
+## The Study of Cause & Effect {.center}
 
 - Causal inference is the process of estimating the mechanisms by which changes in variables (causes) lead to changes in an outcome (the effect).
-- This approach to analysis seeks to establish a cause-and-effect that is generalisable and substantively meaningful in the real world. 
-- 
+- It seeks to establish a cause-and-effect that is generalisable and substantively meaningful in the real world. 
+- It's more than just Randomised Controlled Trials!
+
+## Correlation != Causation {.center .smaller}
+
+</br></br>
+
+$$E[Y|T=1] - E[Y|T=0] = \underbrace{E[Y_1 - Y_0|T=1]}_{ATT} + \underbrace{\{ E[Y_0|T=1] - E[Y_0|T=0] \}}_{BIAS}$$ 
+
+-- @facure2022
 
 ## Moving Beyond "Associations" {.center}
 
@@ -20,49 +28,91 @@ A Fancy Name for an Old Way of Thinking
 - It is very common to see the term "association" used, to avoid claiming the outcome has been "caused" by our predictors (I am guilty of this).
   - But association still implies some causal effect [@haber2022].
   - And the recommendations and implications of the research clearly indicate a belief that the findings are causal!
-- 
+  
+## Schrödinger’s Causal Inference {.center}
+
+</br>
+
+> Our results suggest that “Schrödinger’s causal inference,” — where studies avoid stating (or even explicitly deny) an interest in estimating causal effects yet are otherwise embedded with causal intent, inference, implications, and recommendations — is common. 
+>
+> --- @haber2022
 
 ## More Than a Name {.center}
 
 - While "causal inference" has become the popular terminology, these ideas are not entirely new.
-- However, the approach (DAGs, explicit processes for drawing causal conclusions) has made more precise the old methods.
-- During my PhD, I was taught a lot of similar concepts, but in a more haphazard way.
-  - Learning causal inference methods/concepts and formalising the informal process I use has helped me become a better scientist!
+- However, the approach (DAGs, explicit processes for drawing causal conclusions) has made the old methods more precise.
+- Much of causal inference focuses on methods for making causal claims possible when dealing with observational data.
 
-# Description, Prediction, & Causal Inference {data-background-color="#425563" data-verticator="#E8EDEE"}
+## Visualising Causal Models Using DAGs {.center}
 
-Understanding the Type of Questions We're Asking
+</br>
 
-## Description {.center}
+![@gittens2022](man/figures/dag.png){.nostretch fig-align="center" width=50%}
 
-- What has happened?
+# Classifying Data Science Tasks {data-background-color="#425563" data-verticator="#E8EDEE"}
 
-## Prediction {.center}
+Understanding the Type of Questions We're Asking & the Different Methods for Answering Them
 
-- What will happen in the future?
+## The Challenge {.center}
+
+- It is sometimes difficult to tell whether you are dealing with description, prediction, or explanation.
+- This is because methods like regression are appropriate for all three and the way we talk about each often blurs the lines [@barrett2024].
+
+## Description - What Happened? {.center}
+
+- "Description is using data to provide a quantitative summary of certain features of the world." [@hernan2019]
+- Description is concerned with understanding **what** happened.
+- Counting events, estimating central tendencies (mean, median, mode) and variance, and visualising distributions.
+- Often used in combination with prediction and causal inference.
+
+## Counting Things is Good, Actually {.center}
+
+- Description is frequently treated as a lesser task, but I think this is fundamentally wrong.
+- Counting is one of the best things we can do with data [@barrett2024]!
+- It can be very valuable when the [quantity](https://www.ft.com/content/a2901ce8-5eb7-4633-b89c-cbdf5b386938) is extremely important.
+- It can also be sufficient if we already know a lot about it from previous causal work.
+
+## Don't Mistake Description for Explanation! {.center}
+
+- It is very easy to fall into the trap of treating description as causal, or using causal terms when discussing descriptive findings.
+
+## Prediction - What Will Happen? {.center}
+
+- "Prediction is using data to map some features of the world (the inputs) to other features of the world (the outputs)." [@hernan2019]
+- Prediction focuses on identifying what will happen in the future.
+  - How many A&E attendances will occur in the next hour, day, week, or month? 
+  - What is the probability of an individual suffering a health episode?
+- Machine learning is very good at answering these kinds of questions.
   
-## Causal Inference {.center}
+## Causal Inference - What Was the Cause? {.center}
 
-- Why has this happened? What caused it? What are the consequences?
-
-# Different Methods for Different Questions {data-background-color="#425563" data-verticator="#E8EDEE"}
-
-Knowing the Type of Question Changes the Approach to Answering
-
-## Description {.center}
-
--  
+- Causal inference tries to identify and quantify cause and effect.
+  - What are the primary causal factors that define how long someone will wait in A&E?
+  - What are the environmental factors that lead to someone developing cancer?
+  - Do virtual wards reduce the quantity of hospital attendances an individual experiences?
 
 ## The Differences Between Predictive & Causal Models {.center}
 
+- Causal models are interested in unbiased estimates, prediction focuses on reducing error.
 - Predictive models can (and should) include plenty of correlations
 - With causal models, fewer variables and focus should be on causal mechanism
+- A causal model can identify a small but meaningful effect that would not predict the outcome on its own and this would still be useful!
 
 ## Conclusion {.center}
 
-- Multilevel data is very common, and we should start by assuming our data has grouping structures in it.
-- Not accounting for those grouping structures can cause a lot of problems.
-- Multilevel regression is flexible, powerful, and incredibly effective!
+- Understanding the type of question you're asking will define the methods you will use to find the answer.
+- No approach is inherently more valuable, but they serve specific purposes!
+- Treating description as demonstrating causality is problematic.
+- Treating prediction and explanation as equivalent will lead to building models that are not fit for the task.
+
+## Further Resources {.center}
+
+- [Causal Inference in R](https://www.r-causal.org/)
+- [Causal Inference for the Brave and True](https://matheusfacure.github.io/python-causality-handbook)
+- [Causal Inference: The Mixtape](https://mixtape.scunning.com/)
+- [Causal Inference: What If](https://www.hsph.harvard.edu/miguel-hernan/wp-content/uploads/sites/1268/2024/04/hernanrobins_WhatIf_26apr24.pdf)
+- [The Effect: An Introduction to Research Design and Causality](https://theeffectbook.net/)
+- [The Book of Why: The New Science of Cause and Effect](https://projects.illc.uva.nl/cil/uploaded_files/inlineitem/Pearl_Mackenzie_2018_The_Book_of_Why.pdf)
 
 # Thank You!
 
