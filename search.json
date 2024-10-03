@@ -4,7 +4,7 @@
     "href": "index.html#the-study-of-cause-effect",
     "title": "An Introduction to Causal Inference",
     "section": "The Study of Cause & Effect",
-    "text": "The Study of Cause & Effect\n\nCausal inference is the process of estimating the mechanisms by which changes in variables (causes) lead to changes in an outcome (the effect).\nIt seeks to establish a cause-and-effect that is generalisable and substantively meaningful in the real world.\nIt’s more than just Randomised Controlled Trials!"
+    "text": "The Study of Cause & Effect\n\nCausal inference is the process of estimating the mechanisms by which changes in variables (causes) lead to changes in an outcome (the effect).\nIt seeks to establish a cause and effect that is generalisable and substantively meaningful in the real world.\nIt’s more than just Randomised Controlled Trials!"
   },
   {
     "objectID": "index.html#correlation-causation",
