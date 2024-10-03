@@ -11,7 +11,7 @@ A Fancy Name for an Old Way of Thinking
 ## The Study of Cause & Effect {.center}
 
 - Causal inference is the process of estimating the mechanisms by which changes in variables (causes) lead to changes in an outcome (the effect).
-- It seeks to establish a cause-and-effect that is generalisable and substantively meaningful in the real world. 
+- It seeks to establish a cause and effect that is generalisable and substantively meaningful in the real world. 
 - It's more than just Randomised Controlled Trials!
 
 ## Correlation != Causation {.center .smaller}
