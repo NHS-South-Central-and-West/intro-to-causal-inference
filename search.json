@@ -11,7 +11,7 @@
     "href": "index.html#correlation-causation",
     "title": "An Introduction to Causal Inference",
     "section": "Correlation != Causation",
-    "text": "Correlation != Causation\n\n\\[E[Y|T=1] - E[Y|T=0] = \\underbrace{E[Y_1 - Y_0|T=1]}_{ATT} + \\underbrace{\\{ E[Y_0|T=1] - E[Y_0|T=0] \\}}_{BIAS}\\]\n— Facure Alves (2022)"
+    "text": "Correlation != Causation\n\n\\[E[Y|T=1] - E[Y|T=0] = \\underbrace{E[Y_1 - Y_0|T=1]}_{ATT} + \\underbrace{\\{ E[Y_0|T=1] - E[Y_0|T=0] \\}}_{BIAS}\\]\n– Facure Alves (2022)"
   },
   {
     "objectID": "index.html#moving-beyond-associations",
@@ -46,7 +46,7 @@
     "href": "index.html#the-challenge",
     "title": "An Introduction to Causal Inference",
     "section": "The Challenge",
-    "text": "The Challenge\n\nIt is sometimes difficult to tell whether you are dealing with description, prediction, or explanation.\nThis is because methods like regression are appropriate for all three and the way we talk about each often blurs the lines [barrett2024]."
+    "text": "The Challenge\n\nIt is sometimes difficult to tell whether you are dealing with description, prediction, or explanation.\nThis is because methods like regression are appropriate for all three and the way we talk about each often blurs the lines (Barrett, McGowan, and Gerke 2024)."
   },
   {
     "objectID": "index.html#description---what-happened",
